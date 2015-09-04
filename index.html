@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" data-semver="3.3.5" data-require="bootstrap@*" />
+    <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" data-semver="3.3.5" data-require="bootstrap@*"></script>
+	<script src="http://livejs.com/live.js"></script>
+	    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    
+
+	<div class="page-header">
+		<h1>Room Light Control <small>Rory Crispin</small></h1>
+	</div>
+	
+	<h3>Select colours:</h3>
+		<ul id="colourlist">
+		</ul>
+		    <p><input type ="button" id="aColButton" value="Add Colour"/></p>
+			<br>	
+			Period: <input type="number" step='0.01' name=period">
+			<br><br>
+		<div class="btn-group" role="group" aria-label="...">
+ 			<button type="button" class="btn btn-default" onclick="mode = 'strobe'">Strobe</button>
+			<button type="button" class="btn btn-default" onclick="mode = 'breathe'"> Breathe</button>
+			<button type="button" class="btn btn-default" onclick="mode = 'off'" >Off</button>
+		</div>
+		
+
+		    <p><input type ="button" id="submitButton" onclick='submit()' value="Add Colour"/></p>
+  	</body>
+
+</html>
